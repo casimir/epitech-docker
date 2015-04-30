@@ -5,8 +5,14 @@ RUN zypper --gpg-auto-import-keys -n update
 RUN zypper -n install \
     clang             \
     gcc               \
+    libX11-devel      \
+    libXext-devel     \
     make
 RUN zypper -n install \
     tmux
+
+ADD minilibx /usr/src/minilibx
+RUN make -C /usr/src/minilibx install
+RUN make -C /usr/src/minilibx clean
 
 ADD .bashrc /etc/skel/.bashrc
