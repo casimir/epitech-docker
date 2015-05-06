@@ -9,7 +9,8 @@ RUN zypper -n install \
     libXext-devel     \
     make
 RUN zypper -n install \
-    tmux
+    tmux              \
+    valgrind
 
 ADD minilibx /usr/src/minilibx
 RUN make -C /usr/src/minilibx install
