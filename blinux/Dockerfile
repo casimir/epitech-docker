@@ -4,7 +4,7 @@ MAINTAINER Martin Chaine <chaine_a@epitech.eu>
 RUN zypper --gpg-auto-import-keys -n update
 RUN zypper -n install \
     clang             \
-    gcc               \
+    gcc gcc-c++       \
     libX11-devel      \
     libXext-devel     \
     make
