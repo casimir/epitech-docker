@@ -8,8 +8,8 @@ RUN zypper -n install \
     libX11-devel      \
     libXext-devel     \
     make
-RUN zypper -n install \
-    ncurses-devel
+RUN zypper -n install     \
+    ncurses ncurses-devel
 RUN zypper -n install \
     tmux              \
     valgrind
