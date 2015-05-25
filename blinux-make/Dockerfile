@@ -6,4 +6,4 @@ ADD bugs /usr/bin/bugs
 RUN useradd -md /home/bill bill
 USER bill
 WORKDIR /home/bill/workspace
-ENTRYPOINT exec make -C rendu && cp -r rendu/* . && bugs
+ENTRYPOINT exec ./make_and_test.sh
