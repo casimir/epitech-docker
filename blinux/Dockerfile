@@ -17,7 +17,6 @@ RUN zypper -n install \
 ADD minilibx /usr/src/minilibx
 RUN make -C /usr/src/minilibx install
 RUN make -C /usr/src/minilibx clean
-RUN rmdir bin
 
 ADD .bashrc /etc/skel/.bashrc
 ADD bugs /usr/bin/bugs
