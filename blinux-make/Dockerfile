@@ -6,4 +6,5 @@ ADD bugs /usr/bin/bugs
 RUN useradd -md /home/bill bill
 USER bill
 WORKDIR /home/bill/workspace
-ENTRYPOINT exec ./make_and_test.sh
+ADD make_and_test.sh /home/bill/make_and_test.sh
+ENTRYPOINT exec /home/bill/make_and_test.sh
