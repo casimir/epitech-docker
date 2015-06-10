@@ -13,6 +13,8 @@ RUN zypper -n install     \
 RUN zypper -n install \
     tmux              \
     valgrind
+RUN zypper -n install \
+    python3
 
 ADD minilibx /usr/src/minilibx
 RUN make -C /usr/src/minilibx install
