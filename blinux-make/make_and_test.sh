@@ -1,4 +1,4 @@
 #!/bin/sh
 make -C rendu   && \
-cp -r rendu/* . && \
+cp -ru rendu/* . && \
 bugs -out xunit
