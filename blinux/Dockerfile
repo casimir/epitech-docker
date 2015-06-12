@@ -9,12 +9,13 @@ RUN zypper -n install \
     libXext-devel     \
     make
 RUN zypper -n install     \
-    ncurses ncurses-devel
+    ncurses ncurses-devel \
+    php5                  \
+    python3               \
+    ruby
 RUN zypper -n install \
     tmux              \
     valgrind
-RUN zypper -n install \
-    python3
 
 ADD minilibx /usr/src/minilibx
 RUN make -C /usr/src/minilibx install
