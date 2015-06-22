@@ -15,7 +15,8 @@ RUN zypper -n install     \
     ruby
 RUN zypper -n install \
     tmux              \
-    valgrind
+    valgrind          \
+    zip unzip
 
 ADD minilibx /usr/src/minilibx
 RUN make -C /usr/src/minilibx install
