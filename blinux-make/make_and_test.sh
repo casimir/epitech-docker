@@ -1,7 +1,7 @@
 #!/bin/sh -x
 
 ~/norme_deepthought.py rendu -score -nocheat -swap_traces -malloc >> ~/workspace/norm.dpr 2> ~/workspace/norm.note
-if [ -f Makefile ]; then
+if [ -f rendu/Makefile ]; then
     make -C rendu
 fi
 cp -rn rendu/* .
