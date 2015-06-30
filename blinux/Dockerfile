@@ -12,10 +12,11 @@ RUN zypper -n install \
     ksh               \
     tcsh              \
     zsh
-RUN zypper -n install     \
-    ncurses ncurses-devel \
-    php5                  \
-    python3               \
+RUN zypper -n install          \
+    libSDL-devel libSDL2-devel \
+    ncurses ncurses-devel      \
+    php5                       \
+    python3                    \
     ruby
 RUN zypper -n install \
     tmux              \
