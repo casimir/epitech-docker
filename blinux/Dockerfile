@@ -1,4 +1,4 @@
-FROM opensuse:13.2
+FROM opensuse:13.1
 MAINTAINER Martin Chaine <chaine_a@epitech.eu>
 
 RUN zypper --gpg-auto-import-keys -n update
