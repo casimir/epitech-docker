@@ -4,4 +4,5 @@
 [ -f Makefile ] && make
 [ -f rendu/Makefile ] && make -C rendu
 cp -rn rendu/* .
+bugs -version
 bugs -out "graph txt xunit" -login $DBUSER -city $CITY
