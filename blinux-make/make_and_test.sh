@@ -2,7 +2,7 @@
 
 ~/norme_deepthought.py rendu -score -nocheat -swap_traces -malloc >> ~/workspace/norm.dpr 2> ~/workspace/norm.note
 [ -f Makefile ] && make
-[ -f rendu/Makefile ] && make -C rendu
+[ -f rendu/Makefile ] && make -C rendu $MAKE_RULE
 cp -rn rendu/* .
 bugs -version
 bugs -out "graph txt xunit" -login $DBUSER -city $CITY
