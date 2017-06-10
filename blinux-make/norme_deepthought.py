@@ -352,6 +352,8 @@ class norme:
         ret = self.line.find("return")
         if ret == -1:
             ret = self.line.find("break")
+        if ret == -1:
+            ret = self.line.find("continue")
         par = self.line.find("(")
         if (ret != -1 and par == -1):
             pos = pos + 1
